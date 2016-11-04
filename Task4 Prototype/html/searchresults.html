@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>UPMC Search Results</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/i18n/defaults-*.min.js"></script>
+    <script src="../js/sort.js"></script>
+    <link href="../css/homepage.css" rel="stylesheet" type="text/css" />
+    <link href="../css/searchresults.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container col-md-10 col-md-offset-1">
+        <div class="top">
+            <div class="row">
+                <div class="col-md-7">
+                    <p class="text-left">
+                        <span class="glyphicon glyphicon-earphone" style="margin-left: 10px;"></span> 1-800-533-UPMC
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <p class="text-right" , style="color: white; margin-right:8px;">
+                        <strong>Hello, <i class="fa fa-user" aria-hidden="true"></i> John </strong>
+                        <a href="index.html" , style="margin-left: 5px; margin-right: 10px; color: white;"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out </a>
+                        <a href="cart.html" , style="color: white;"><span class="glyphicon glyphicon-shopping-cart" style = "margin-right: 5px;"></span>Cart <span class="badge">0</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <!-- <img src="../img/upmc.PNG" class="img-responsive" alt="" width="347" height="68" style=""> -->
+            <div class="col-md-5 ">
+                <a href="index.html"><img src="../img/upmc.PNG" class="img-responsive"></a>
+            </div>
+            <div class="col-md-2" style="margin-top:15px;">
+                <span style="margin-left:6px;"><strong>FREE SHIPPING</strong></span>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">View details</button>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <p class="modal-title">Free shipping on all orders</p>
+                            </div>
+                            <div class="modal-body">
+                                <p>UPMC offers free ground shipping on all orders.Free shipping applies only to standard ground shipping within the forty-eight (48) contiguous United States. Attention Alaska & Hawaii customers: We currently do not accept online orders to Alaska & Hawaii as special rates do apply. Please contact UPMC at 800-533-UPMC.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 vcenter" style="margin-top:15px;">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Search by Keyword or symptoms">
+                    <span class="input-group-addon">
+                            <!--<a href="errorPage.html" class="btn btn-info" role="button"><span class="glyphicon glyphicon-search"></span></a>-->
+                    <a href="searchresults.html">
+                        <button type="submit"> <span class="glyphicon glyphicon-search"></span> </button>
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--Carousel-->
+        <div>
+            <br />
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- <a class="navbar-brand" href="errorPage.html">WebSiteName</a> -->
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <!-- Personal Care -->
+                        <li class="dropdown">
+                            <a href="personalCare.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personal Care<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Ear Care</a></li>
+                                <li><a href="errorPage.html">Eye Care</a></li>
+                                <li><a href="errorPage.html">Foot Care</a></li>
+                                <li><a href="errorPage.html">Lip Care</a></li>
+                                <li><a href="errorPage.html">Oral Care</a></li>
+                            </ul>
+                        </li>
+                        <!-- Medicine -->
+                        <li class="dropdown">
+                            <a href="medicineTreatment.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Medicine & Treatment<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Cough, Cold & Flu</a></li>
+                                <li><a href="searchresults2.html">Pain Relief & Management</a></li>
+                                <li><a href="errorPage.html">Allergy & Asthma</a></li>
+                                <li><a href="errorPage.html">Digestive Health & Nausea</a></li>
+                                <li><a href="errorPage.html">Diabetes Management</a></li>
+                                <li><a href="errorPage.html">Smoking Cessation</a></li>
+                                <li><a href="errorPage.html">Skin Aliments</a></li>
+                                <li><a href="searchresults.html">First Aid</a></li>
+                                <li><a href="errorPage.html">Sleep & Snoring Aid</a></li>
+                                <li><a href="errorPage.html">Braces & Support</a></li>
+                                <li><a href="errorPage.html">Incontinence</a></li>
+                            </ul>
+                        </li>
+                        <!-- Supplement -->
+                        <li class="dropdown">
+                            <a href="vitaminsSupplements.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vitamins & Supplement<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Multivitamins</a></li>
+                                <li><a href="errorPage.html">Letter Vitamins A-K</a></li>
+                                <li><a href="errorPage.html">Herbs</a></li>
+                                <li><a href="errorPage.html">Calcium & Minerals</a></li>
+                                <li><a href="errorPage.html">Fish Oil, Omegas & EFAs</a></li>
+                                <li><a href="errorPage.html">Probiotics</a></li>
+                                <li><a href="errorPage.html">Bone & Joint Health</a></li>
+                                <li><a href="errorPage.html">Energy & Alertness</a></li>
+                                <li><a href="errorPage.html">Ear & Eye Health</a></li>
+                                <li><a href="errorPage.html">Heart Health</a></li>
+                                <li><a href="errorPage.html">Immune Support</a></li>
+                                <li><a href="errorPage.html">Memory Support</a></li>
+                                <li><a href="errorPage.html">Sleep Aid</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="dietNutrition.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Diet & Nutrition<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Weight Management</a></li>
+                                <li><a href="errorPage.html">Sports Nutrition</a></li>
+                                <li><a href="errorPage.html">Bars & Drinks</a></li>
+                                <li><a href="errorPage.html">Sports Medicine</a></li>
+                                <li><a href="errorPage.html">Balanced Nutrition</a></li>
+                                <li><a href="errorPage.html">Health & Fitness Monitors</a></li>
+                                <li><a href="errorPage.html">Protein</a></li>
+                                <li><a href="errorPage.html">Supplements & Diet Aids</a></li>
+                            </ul>
+                        </li>
+                        <!-- Baby & Mom -->
+                        <li class="dropdown">
+                            <a href="babyMom.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Baby & Mom<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Baby Food & Formula</a></li>
+                                <li><a href="errorPage.html">Feeding Essentials</a></li>
+                                <li><a href="errorPage.html">Diapers & Wipes</a></li>
+                                <li><a href="errorPage.html">Bath, Skin & Hair</a></li>
+                                <li><a href="errorPage.html">Childproofing & Safety</a></li>
+                                <li><a href="errorPage.html">Children’s Health Care</a></li>
+                                <li><a href="errorPage.html">Children’s Vitamins & Supplements</a></li>
+                                <li><a href="errorPage.html">Baby Gear</a></li>
+                                <li><a href="errorPage.html">Pregnancy & Fertility</a></li>
+                                <li><a href="errorPage.html">Natural & Organic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-5">
+                <ol class="breadcrumb" style="background-color:white;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="medicinetreatment.html">Medicine and Treatment</a></li>
+                    <li class="active">First Aid</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <!-- side bar-->
+            <div class="col-sm-6 col-md-3">
+                <ul class="nav nav-list">
+                    <li class="title"><strong>Category</strong></li>
+                    <li>
+                        <p class="line">Medicine & Treatment</p>
+                    </li>
+                    <li>
+                        <p style="height:10px; font-size:12px; padding-left:15px;">> First Aid</p>
+                    </li>
+                    <hr></hr>
+                    <li class="title"><strong>Online, In Store</strong></li>
+                    <li>
+                        <p class="line">
+                            <input type="radio" name="category" value="All Products" /> All Products</p>
+                    </li>
+                    <li>
+                        <p class="line">
+                            <input type="radio" name="category" value="Online" /> Online (54)</p>
+                    </li>
+                    <li>
+                        <p class="line">
+                            <input type="radio" name="category" value="In Store" /> In Store (38)</p>
+                    </li>
+                    <hr></hr>
+                    <li class="title"><strong>Deal & Promotion</strong></li>
+                    <li>
+                        <p class="line">
+                            <input type="checkbox" name="category" value="Coupon Available" /> Coupon Available (15)</p>
+                    </li>
+                    <li>
+                        <p class="line">
+                            <input type="checkbox" name="category" value="Sales & Offers" /> Sales & Offers (52)</p>
+                    </li>
+                    <hr></hr>
+                    <li class="title">
+                        <Strong>Brand</strong>
+                    </li>
+                    <li>
+                        <p class=line>
+                            <input type="checkbox" name="category" value="Band-Aid" /> Band-Aid (26)</p>
+                    </li>
+                    <li>
+                        <p class=line>
+                            <input type="checkbox" name="category" value="Curad" /> Curad (16)</p>
+                    </li>
+                    <li>
+                        <p class=line>
+                            <input type="checkbox" name="category" value="Medline" /> Medline (14)</p>
+                    </li>
+                    <li>
+                        <p class=line>
+                            <input type="checkbox" name="category" value="Nexcare" /> Nexcare (8)</p>
+                    </li>
+                    <hr></hr>
+                    <li class="title"><strong>Price</strong></li>
+                    <li>
+                        <p class="line">
+                            <input type="checkbox" name="category" value="Under $5" /> Under $5 (23)</p>
+                    </li>
+                    <li>
+                        <p class="line">
+                            <input type="checkbox" name="category" value="$5 - $10" /> $5 - $10 (17)</p>
+                    </li>
+                    <li>
+                        <p class="line">
+                            <input type="checkbox" name="category" value="$10 - $20" /> $10 - $20 (11)</p>
+                    </li>
+                    <li>
+                        <p class="line">
+                            <input type="checkbox" name="category" value="$20 - $50" /> $20 - $50 (3)</p>
+                    </li>
+                    <p>Enter a custom value</p>
+                    <input type="text" name="low price" style="width:50px;"> to
+                    <input type="text" name="low price" style="width:50px;">
+                    <button type="button" class="btn btn-default" style="background-color:#712c6b; color:white;">Go</button>
+                    <!-- <input type="submit" value="Go"> -->
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-9 ">
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-md-1" style="float : left;">
+                        <select class="selectpicker" data-header="Sort by" title="Sort by" onchange="sort(this.options[this.options.selectedIndex].value)" style="font-family:'FontAwesome', Arial;">
+                            <option>Reviews</option>
+                            <option>Price from low to high</option>
+                            <option>Price from high to low</option>
+                            <option>Relevance</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" style="float : right;">
+                        <p style=""><span style="">Display Mode </span>
+                            <a href="errorpage.html" <span class="glyphicon glyphicon-th" style=" font-size: 25px; color: #712c6b;"> </span>
+                            </a>
+                            <a href="errorpage.html"><span class="glyphicon glyphicon-list" style = " font-size: 25px; color: Black"></span> </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="productDetail.html"><img id="item0Img" src="https://www.cvs.com/bizcontent/merchandising/productimages/large/38137005566.jpg" alt="..." height="233.52px" width="233.52px" /></a>
+                            <div class="caption">
+                                <a href="productDetail.html" style="color: black;"><h5 id="item0Name">Band-Aid Flexible Fabric Bandages All One Size (1 Inch)</h5>
+                            <p id="item0Price">$8.79</p>
+                        </a>
+                                <a href="productDetail.html" , style="color: #712c6b;">
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true" style="font-size:12px;" id="item0Star0"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true" id="item0Star1"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true" id="item0Star2"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true" id="item0Star3"></span>
+                                    <span class="glyphicon glyphicon-star" aria-hidden="true" id="item0Star4"></span>
+                                    <span id="item0Reviews"> (120 reviews) </span>
+                                </a>
+                                <span style="color: red">
+                            <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                        </span>
+                                <div class="modal fade" id="myModalPromotion" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Buy One get 2nd 50% off</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Promotion applys to participate UPMC products.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>
+                                <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                                <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                            </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="productDetail.html" style="color:black">
+                                <img id="item1Img" src="../img/fp8.jpg" alt="..." height="233.52px" width="233.52px" />
+                                <div class="caption">
+                                    <h5 id="item1Name">Band-Aid Water Block Plus Clear Bandage Assorted Size</h5>
+                                    <p id="item1Price">$9.99</p>
+                            </a>
+                            <a href="productDetail.html" , style="color: #712c6b;">
+                                <span id="item1Star0" class="glyphicon glyphicon-star" aria-hidden="true" style=""></span>
+                                <span id="item1Star1" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span id="item1Star2" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span id="item1Star3" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span id="item1Star4" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span id="item1Reviews"> (120 reviews) </span>
+                            </a>
+                            <span style="color: red;">
+                            <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                        </span>
+                            <p><span>
+                            <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                            <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                        </span>
+                            </p>
+                            <!--Find in pharmacy model-->
+                            <div class="modal fade" id="findstore">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h3 class="modal-title">Find at Pharmacy
+                                    </h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <img src="http://pics.drugstore.com/prodimg/149705/220.jpg" alt="..." height="100px" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Band-Aid Flexible Fabric Bandages All One Size (1 Inch)</p>
+                                                        <p>$ 8.79</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <table class="table table-striped" id="tblGrid">
+                                                <thead id="tblHead">
+                                                    <tr>
+                                                        <th>Pharmacy</th>
+                                                        <th>Distance</th>
+                                                        <th class="text-right">Availibility</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Magee Pharmacy</td>
+                                                        <td>0.86 mile</td>
+                                                        <td class="text-right" style="color:green;">5 in stock</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Falk Pharmacy</td>
+                                                        <td>1.23 mile</td>
+                                                        <td class="text-right" style="color:green;">3 in stock</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forbes Pharmacy</td>
+                                                        <td>0.53 mile</td>
+                                                        <td class="text-right" style="color: red;">Not available</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="productDetail.html"><img id="item2Img" src="https://www.cvs.com/bizcontent/merchandising/productimages/large/38137004431.jpg" alt="..." height="233.52px" width="233.52px" /></a>
+                            <div class="caption">
+                                <a href="productDetail.html" style="color: black;"><h5 id="item2Name">Band-Aid Flexible Fabric All One Size Adhesive Bandages</h5>
+                        <p id="item2Price">$4.79</p>
+                    </a>
+                                <a href="productDetail.html" , style="color: #712c6b;">
+                                    <span id="item2Star0" class="glyphicon glyphicon-star" aria-hidden="true" style="font-size:12px;"></span>
+                                    <span id="item2Star1" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item2Star2" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item2Star3" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item2Star4" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item2Reviews"> (66 reviews) </span>
+                                </a>
+                                <span style="color: red">
+                        <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                    </span>
+                                <div class="modal fade" id="myModalPromotion" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Buy One get 2nd 50% off</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Promotion applys to participate UPMC products.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>
+                            <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                            <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                        </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="errorPage.html"><img id="item3Img" src="https://www.cvs.com/bizcontent/merchandising/productimages/large/38137005567.jpg" alt="..." height="233.52px" width="233.52px" /></a>
+                            <div class="caption">
+                                <a href="productDetail.html" style="color: black;"><h5 id="item3Name">Band-Aid Antibiotic Adhesive Bandage All One Size Large</h5>
+                        <p id="item3Price">$5.29</p></a>
+                                <a href="productDetail.html" , style="color: #712c6b;">
+                                    <span id="item3Star0" class="glyphicon glyphicon-star" aria-hidden="true" style="font-size:12px;"></span>
+                                    <span id="item3Star1" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item3Star2" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item3Star3" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item3Star4" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item3Reviews"> (3 reviews) </span>
+                                </a>
+                                <span style="color: red">
+                            <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                        </span>
+                                <div class="modal fade" id="myModalPromotion" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Buy One get 2nd 50% off</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Promotion applys to participate UPMC products.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>
+                                <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                                <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                            </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="productDetail.html"><img id="item4Img" src="https://www.cvs.com/bizcontent/merchandising/productimages/large/38137116662.jpg" alt="..." height="233.52px" width="233.52px" /></a>
+                            <div class="caption">
+                                <a href="productDetail.html" style="color: black;"><h5 id="item4Name">Band-Aid Adhesive Bandages Finding Dory</h5>
+                            <p id="item4Price">$4.79</p></a>
+                                <a href="productDetail.html" , style="color: #712c6b;">
+                                    <span id="item4Star0" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item4Star1" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item4Star2" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item4Star3" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item4Star4" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item4Reviews"> (0 reviews) </span>
+                                </a>
+                                <span style="color: red">
+                                <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                            </span>
+                                <div class="modal fade" id="myModalPromotion" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Buy One get 2nd 50% off</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Promotion applys to participate UPMC products.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>
+                                    <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                                    <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="productDetail.html"><img id="item5Img" src="https://www.cvs.com/bizcontent/merchandising/productimages/large/38137115789.jpg" alt="..." height="233.53px" width="233.53px" /></a>
+                            <div class="caption">
+                                <a href="productDetail.html" style="color: black;"><h5 id="item5Name">Band-Aid Adhesive Bandage Assorted Size Turtles</h5>
+                                <p id="item5Price">$4.79</p></a>
+                                <a href="productDetail.html" , style="color: #712c6b;">
+                                    <span id="item5Star0" class="glyphicon glyphicon-star" aria-hidden="true" style="font-size:12px;"></span>
+                                    <span id="item5Star1" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item5Star2" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item5Star3" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item5Star4" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item5Reviews"> (1 reviews) </span>
+                                </a>
+                                <span style="color: red">
+                                    <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                                </span>
+                                <div class="modal fade" id="myModalPromotion" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Buy One get 2nd 50% off</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Promotion applys to participate UPMC products.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>
+                                        <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                                        <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="errorPage.html"><img id="item6Img" src="https://www.cvs.com/bizcontent/merchandising/productimages/large/38137004666.jpg" alt="..." height="233.52px" width="233.52px" /></a>
+                            <div class="caption">
+                                <a href="errorPage.html" style="color: black;"><h5 id="item6Name">Band-Aid Comfort Sheer Adhesive Bandage All One Size</h5>
+                                    <p id="item6Price">$2.29</p></a>
+                                <a href="productDetail.html" , style="color: #712c6b;">
+                                    <span id="item6Star0" class="glyphicon glyphicon-star" aria-hidden="true" style="font-size:12px;"></span>
+                                    <span id="item6Star1" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item6Star2" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item6Star3" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item6Star4" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item6Reviews"> (3 reviews) </span>
+                                </a>
+                                <span style="color: red">
+                                        <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                                    </span>
+                                <div class="modal fade" id="myModalPromotion" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Buy One get 2nd 50% off</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Promotion applys to participate UPMC products.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>
+                                            <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                                            <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                                        </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="productDetail.html"><img id="item7Img" src="https://www.cvs.com/bizcontent/merchandising/productimages/large/38137004582.jpg" alt="..." height="233.52px" width="233.52px" /></a>
+                            <div class="caption">
+                                <a href="productDetail.html" style="color: black;"><h5 id="item7Name">Band-Aid Blister Gel Guard Adhesive Bandage for Toes</h5>
+                                        <p id="item7Price">$6.79</p></a>
+                                <a href="productDetail.html" , style="color: #712c6b;">
+                                    <span id="item7Star0" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item7Star1" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item7Star2" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item7Star3" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item7Star4" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item7Reviews"> (0 reviews) </span>
+                                </a>
+                                <span style="color: red">
+                                            <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                                        </span>
+                                <div class="modal fade" id="myModalPromotion" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Buy One get 2nd 50% off</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Promotion applys to participate UPMC products.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>
+                                                <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                                                <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                                            </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <a href="productDetail.html"><img id="item8Img" src="https://www.cvs.com/bizcontent/merchandising/productimages/large/38137004488.jpg" alt="..." height="233.53px" width="233.53px" /></a>
+                            <div class="caption">
+                                <a href="productDetail.html" style="color: black;"><h5 id="item8Name">Band-Aid Blister Gel Guard Adhesive Bandage for Heels</h5>
+                                            <p id="item8Price">$6.99</p></a>
+                                <a href="productDetail.html" , style="color: #712c6b;">
+                                    <span id="item8Star0" class="glyphicon glyphicon-star" aria-hidden="true" style="font-size:12px;"></span>
+                                    <span id="item8Star1" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item8Star2" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item8Star3" class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    <span id="item8Star4" class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                    <span id="item8Reviews"> (20 reviews) </span>
+                                </a>
+                                <span style="color: red">
+                                                <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModalPromotion" style="color:red">Buy One get 2nd 50% off</button>
+                                            </span>
+                                <div class="modal fade" id="myModalPromotion" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Buy One get 2nd 50% off</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Promotion applys to participate UPMC products.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>
+                                                    <a href="cart.html" class="btn btn-primary btn-sm" role="button" id = "addtocart" >Add to Cart</a></span><span>
+                                                    <a href="errorpage.html" class="btn btn-default btn-sm" id = "findpharmacy" role="button" data-toggle="modal" data-target="#findstore">Find at Pharmacy</a>
+                                                </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="float:right">
+                    <ul class="pagination">
+                        <li><a href="errorpage.html">«</a></li>
+                        <li><a href="errorpage.html" class="active">1</a></li>
+                        <li><a href="errorpage.html">2</a></li>
+                        <li><a href="errorpage.html">3</a></li>
+                        <li><a href="errorpage.html">4</a></li>
+                        <li><a href="errorpage.html">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <!----------- Footer ------------>
+            <footer class="footer-bs">
+              <hr />
+                <div class="row">
+                    <div class="col-md-3 footer-brand animated fadeInLeft">
+                        <img src="../img/UPMC.png" style="width: 200px;"></img>
+                        <p>UPMC online pharmacy strives to provide best service and lowest price to community </p>
+                        <p>© 2016 High Five Consulting, All rights reserved</p>
+                    </div>
+                    <div class="col-md-4 footer-nav animated fadeInUp">
+                        <h4>Menu</h4>
+                        <div class="col-md-6">
+                            <ul class="pages">
+                                <li><a href="errorpage.html">Locations</a></li>
+                                <li><a href="errorpage.html">Services</a></li>
+                                <li><a href="errorpage.html">Return</a></li>
+                                <li><a href="errorpage.html">Shipping</a></li>
+                                <li><a href="errorpage.html">Advice</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list">
+                                <li><a href="errorpage.html">About Us</a></li>
+                                <li><a href="errorpage.html">Contacts</a></li>
+                                <li><a href="errorpage.html">Terms & Condition</a></li>
+                                <li><a href="errorpage.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 footer-social animated fadeInDown">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="errorpage.html">Facebook</a></li>
+                            <li><a href="errorpage.html">Twitter</a></li>
+                            <li><a href="errorpage.html">Instagram</a></li>
+                            <li><a href="errorpage.html">RSS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-ns animated fadeInRight">
+                        <h4>Subscribe</h4>
+                        <p>Enter email to subscribe from us</p>
+                        <p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <span class="glyphicon glyphicon-envelope"></span>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            <section style="text-align:center; margin:10px auto;">
+                <p>Designed by High Five Consulting</p>
+            </section>
+        </div>
+</body>
+
+</html>

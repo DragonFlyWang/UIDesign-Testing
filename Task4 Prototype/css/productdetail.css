@@ -1,0 +1,26 @@
+ .tab-content {
+     color: black;
+     border: 1px solid;
+     /*background-color: #f3e5f5;*/
+ }
+ /* remove border radius for the tab */
+
+ .nav-pills>li>a {
+     border-radius: 4px 4px 0 0;
+     color: black;
+     font-weight: bold;
+     background-color: #f3e5f5;
+ }
+
+ .nav-pills>li>a:hover, .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+     color: white;
+     font-weight: bold;
+     border-radius: 4px 4px 0 0;
+     background-color: #712c6b;
+ }
+
+ #addtocart {
+     background-color: #712c6b;
+     border-color: #712c6b;
+     width: auto;
+ }

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UPMC Personal Care</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="../css/homepage.css" rel="stylesheet" type="text/css" />
+    <link href="../css/category.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+
+    .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+    }
+    /* Remove the jumbotron's default bottom margin */
+
+    .jumbotron {
+        margin-bottom: 0;
+    }
+    /* Add a gray background color and some padding to the footer */
+
+    footer {
+        background-color: white;
+        padding: 25px;
+    }
+
+    p.subtitle {
+        color: #712D6B;
+    }
+
+    h1.serif {
+        font-family: "Times New Roman", Times, serif;
+        color: #712D6B
+    }
+
+    .nav > li:hover .dropdown-menu {
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container col-md-10 col-md-offset-1">
+        <div class="top">
+            <div class="row">
+                <div class="col-md-7">
+                    <p class="text-left">
+                        <span class="glyphicon glyphicon-earphone" style="margin-left: 10px;"></span> 1-800-533-UPMC
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <p class="text-right" , style="color: white; margin-right:8px;">
+                        <strong>Hello, <i class="fa fa-user" aria-hidden="true"></i> John </strong>
+                        <a href="index.html" , style="margin-left: 5px; margin-right: 10px; color: white;"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out </a>
+                        <a href="cart.html" , style="color: white;"><span class="glyphicon glyphicon-shopping-cart" style = "margin-right: 5px;"></span>Cart <span class="badge">0</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <!-- <img src="../img/upmc.PNG" class="img-responsive" alt="" width="347" height="68" style=""> -->
+            <div class="col-md-5 ">
+                <a href="index.html"><img src="../img/upmc.PNG" class="img-responsive"></a>
+            </div>
+            <div class="col-md-2" style="margin-top:15px;">
+                <span style="margin-left:6px;"><strong>FREE SHIPPING</strong></span>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">View details</button>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <p class="modal-title">Free shipping on all orders</p>
+                            </div>
+                            <div class="modal-body">
+                                <p>UPMC offers free ground shipping on all orders.Free shipping applies only to standard ground shipping within the forty-eight (48) contiguous United States. Attention Alaska & Hawaii customers: We currently do not accept online orders to Alaska & Hawaii as special rates do apply. Please contact UPMC at 800-533-UPMC.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 vcenter" style="margin-top:15px;">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Search by Keyword or symptoms">
+                    <span class="input-group-addon">
+              <!--<a href="errorPage.html" class="btn btn-info" role="button"><span class="glyphicon glyphicon-search"></span></a>-->
+                    <a href="searchresults.html">
+                        <button type="submit"> <span class="glyphicon glyphicon-search"></span> </button>
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--Carousel-->
+        <div>
+            <br />
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- <a class="navbar-brand" href="errorPage.html">WebSiteName</a> -->
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <!-- Personal Care -->
+                        <li class="dropdown">
+                            <a href="personalCare.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personal Care<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Ear Care</a></li>
+                                <li><a href="errorPage.html">Eye Care</a></li>
+                                <li><a href="errorPage.html">Foot Care</a></li>
+                                <li><a href="errorPage.html">Lip Care</a></li>
+                                <li><a href="errorPage.html">Oral Care</a></li>
+                            </ul>
+                        </li>
+                        <!-- Medicine -->
+                        <li class="dropdown">
+                            <a href="medicineTreatment.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Medicine & Treatment<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Cough, Cold & Flu</a></li>
+                                <li><a href="searchresults2.html">Pain Relief & Management</a></li>
+                                <li><a href="errorPage.html">Allergy & Asthma</a></li>
+                                <li><a href="errorPage.html">Digestive Health & Nausea</a></li>
+                                <li><a href="errorPage.html">Diabetes Management</a></li>
+                                <li><a href="errorPage.html">Smoking Cessation</a></li>
+                                <li><a href="errorPage.html">Skin Aliments</a></li>
+                                <li><a href="searchresults.html">First Aid</a></li>
+                                <li><a href="errorPage.html">Sleep & Snoring Aid</a></li>
+                                <li><a href="errorPage.html">Braces & Support</a></li>
+                                <li><a href="errorPage.html">Incontinence</a></li>
+                            </ul>
+                        </li>
+                        <!-- Supplement -->
+                        <li class="dropdown">
+                            <a href="vitaminsSupplements.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vitamins & Supplement<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Multivitamins</a></li>
+                                <li><a href="errorPage.html">Letter Vitamins A-K</a></li>
+                                <li><a href="errorPage.html">Herbs</a></li>
+                                <li><a href="errorPage.html">Calcium & Minerals</a></li>
+                                <li><a href="errorPage.html">Fish Oil, Omegas & EFAs</a></li>
+                                <li><a href="errorPage.html">Probiotics</a></li>
+                                <li><a href="errorPage.html">Bone & Joint Health</a></li>
+                                <li><a href="errorPage.html">Energy & Alertness</a></li>
+                                <li><a href="errorPage.html">Ear & Eye Health</a></li>
+                                <li><a href="errorPage.html">Heart Health</a></li>
+                                <li><a href="errorPage.html">Immune Support</a></li>
+                                <li><a href="errorPage.html">Memory Support</a></li>
+                                <li><a href="errorPage.html">Sleep Aid</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="dietNutrition.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Diet & Nutrition<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Weight Management</a></li>
+                                <li><a href="errorPage.html">Sports Nutrition</a></li>
+                                <li><a href="errorPage.html">Bars & Drinks</a></li>
+                                <li><a href="errorPage.html">Sports Medicine</a></li>
+                                <li><a href="errorPage.html">Balanced Nutrition</a></li>
+                                <li><a href="errorPage.html">Health & Fitness Monitors</a></li>
+                                <li><a href="errorPage.html">Protein</a></li>
+                                <li><a href="errorPage.html">Supplements & Diet Aids</a></li>
+                            </ul>
+                        </li>
+                        <!-- Baby & Mom -->
+                        <li class="dropdown">
+                            <a href="babyMom.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Baby & Mom<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="errorPage.html">Baby Food & Formula</a></li>
+                                <li><a href="errorPage.html">Feeding Essentials</a></li>
+                                <li><a href="errorPage.html">Diapers & Wipes</a></li>
+                                <li><a href="errorPage.html">Bath, Skin & Hair</a></li>
+                                <li><a href="errorPage.html">Childproofing & Safety</a></li>
+                                <li><a href="errorPage.html">Children’s Health Care</a></li>
+                                <li><a href="errorPage.html">Children’s Vitamins & Supplements</a></li>
+                                <li><a href="errorPage.html">Baby Gear</a></li>
+                                <li><a href="errorPage.html">Pregnancy & Fertility</a></li>
+                                <li><a href="errorPage.html">Natural & Organic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container col-md-10 col-md-offset-1">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="errorPage.html">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Ear Care</div>
+                        <div class="panel-body"><img src="../img/personal_care/ear.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="errorPage.html">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Eye Care</div>
+                        <div class="panel-body"><img src="../img/personal_care/eye.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="errorPage.html">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Foot Care</div>
+                        <div class="panel-body"><img src="../img/personal_care/foot.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container col-md-10 col-md-offset-1">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="errorPage.html">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Lip Care</div>
+                        <div class="panel-body"><img src="../img/personal_care/lip.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="errorPage.html">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Oral Care</div>
+                        <div class="panel-body"><img src="../img/personal_care/oral.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br />
+        <br />
+        <footer class="footer-bs">
+          <hr>
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <img src="../img/UPMC.png" style="width: 200px;"></img>
+                    <p>UPMC online pharmacy strives to provide best service and lowest price to community </p>
+                    <p>© 2016 High Five Consulting, All rights reserved</p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Menu</h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="errorpage.html">Locations</a></li>
+                            <li><a href="errorpage.html">Services</a></li>
+                            <li><a href="errorpage.html">Return</a></li>
+                            <li><a href="errorpage.html">Shipping</a></li>
+                            <li><a href="errorpage.html">Advice</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="errorpage.html">About Us</a></li>
+                            <li><a href="errorpage.html">Contacts</a></li>
+                            <li><a href="errorpage.html">Terms & Condition</a></li>
+                            <li><a href="errorpage.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="errorpage.html">Facebook</a></li>
+                        <li><a href="errorpage.html">Twitter</a></li>
+                        <li><a href="errorpage.html">Instagram</a></li>
+                        <li><a href="errorpage.html">RSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Subscribe</h4>
+                    <p>Enter email to subscribe from us</p>
+                    <p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </span>
+                        </div>
+                        <!-- /input-group -->
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section style="text-align:center; margin:10px auto;">
+            <p>Designed by High Five Consulting</p>
+        </section>
+    </div>
+
+</body>
+
+</html>

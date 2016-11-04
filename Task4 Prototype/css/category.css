@@ -1,0 +1,19 @@
+.panel>.panel-heading {
+    /*background-color:#Fce3fc; */
+    background-color:#712C6B;
+    color: white;
+}
+
+.panel {
+	color: white;
+  border-color: #712C6B;
+}
+
+a, a:hover {
+   text-decoration: none;
+}
+
+.panel>.panel-heading:hover {
+  background-color: #712C6B;
+  box-shadow: inset 0 3px 3px #520067, 0 0 8px #520067;
+}
